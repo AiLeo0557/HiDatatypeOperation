@@ -1,0 +1,19 @@
+{
+  "name": "hi-datatype-operation",
+  "version": "1.0.0",
+  "description": "TypeScript 原生类型守卫生成器，自动同步类型定义与运行时验证逻辑。支持装饰器语法、类型谓词组合与泛型约束验证，提供 VS Code 智能提示插件。",
+  "keywords": [
+    "typecheck"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:AiLeo0557/HiDatatypeOperation.git"
+  },
+  "license": "ISC",
+  "author": "杜朝辉",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  }
+}
