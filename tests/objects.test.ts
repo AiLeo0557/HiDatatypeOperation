@@ -3,6 +3,7 @@ import {
   isObjectLike,
   isStrictObject,
   isEmptyObject,
+  isFunction,
   matchStructure,
 } from '../src/detectors/objects';
 
@@ -40,4 +41,7 @@ describe('对象类型检测', () => {
     expect(isEmptyObject(true)).toBe(false);
     expect(isEmptyObject(false)).toBe(false);
   });
+  test('isFunction', () => {
+    expect(isFunction(() => { })).toBe(true)
+  })
 })
