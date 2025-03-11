@@ -24,7 +24,7 @@
   },
   "license": "ISC",
   "author": "杜朝辉",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "build": "tsup",
     "test": "vitest",
