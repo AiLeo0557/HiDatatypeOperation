@@ -1,6 +1,6 @@
 {
   "name": "hi-datatype-operation",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "TypeScript 原生类型守卫生成器，自动同步类型定义与运行时验证逻辑。支持装饰器语法、类型谓词组合与泛型约束验证，提供 VS Code 智能提示插件。",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

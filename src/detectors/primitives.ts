@@ -33,3 +33,6 @@ export const isPrimitive = (val: unknown): val is Primitive =>
 // 复合类型检测
 export const isNonNullablePrimitive = (val: unknown): val is NonNullablePrimitive =>
   val !== null && val !== undefined && isPrimitive(val);
+// 检测数据如果为 null 则转化为 undefined，否则返回原值
+export const checkNullToUndefined = <T>(value: T): T extends null ? undefined : T =>
+  (value === null ? undefined : value) as T extends null ? undefined : T
