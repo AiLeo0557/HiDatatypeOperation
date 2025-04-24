@@ -1,7 +1,7 @@
 type ObjectStructure = Record<string, (val: unknown) => boolean>;
 type EmptyStrictObject = Record<string, never>;
 type StrictObject = Record<string, unknown>;
-export type DateType =
+export type DataType =
   "undefined" |
   "null" |
   "boolean" |
@@ -20,7 +20,7 @@ const objectToString: typeof Object.prototype.toString =
   Object.prototype.toString;
 
 
-export function getDataType(data: any): DateType {
+export function getDataType(data: any): DataType {
   // 使用Object.prototype.toString.call()方法获取数据类型
   return objectToString.call(data).slice(8, -1).toLowerCase();
 }
